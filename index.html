@@ -38,6 +38,7 @@
       margin: 0 15px;
       text-decoration: none;
       font-weight: 600;
+      display: inline-block;
     }
     section {
       padding: 2rem;
@@ -49,6 +50,7 @@
       border-bottom: 2px solid #1e40af;
       display: inline-block;
       padding-bottom: 0.3rem;
+      font-size: 1.6rem;
     }
     .project {
       background: white;
@@ -64,6 +66,7 @@
     }
     .project h3 {
       margin-top: 0;
+      font-size: 1.3rem;
     }
     .btn {
       display: inline-block;
@@ -91,16 +94,45 @@
       padding: 1.2rem;
       margin-top: 2rem;
     }
-    @media (max-width: 600px) {
+
+    /* Responsive adjustments */
+    @media (max-width: 900px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
       section {
-        padding: 1rem;
+        padding: 1.5rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 1.8rem 1rem;
+      }
+      header h1 {
+        font-size: 1.6rem;
+      }
+      header p {
+        font-size: 0.95rem;
       }
       nav a {
         display: block;
-        margin: 8px 0;
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 1.3rem;
+      }
+      .project {
+        padding: 1rem;
+      }
+      .project h3 {
+        font-size: 1.1rem;
       }
       .btn {
-        width: 100%;
+        width: 80%;
         text-align: center;
       }
     }
